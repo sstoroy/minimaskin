@@ -1,3 +1,6 @@
+const markdownIt = require('markdown-it');
+const markdownItEleventyImg = require("markdown-it-eleventy-img");
+
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
@@ -16,6 +19,18 @@ module.exports = (config) => {
   config.addCollection('tagList', require('./lib/collections/tagList'));
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+
+  config.setLibrary('md', markdownIt ({
+    html: true,
+    breaks: true,
+    linkify: true
+  })
+  .use(markdownItEleventyImg, {
+    imgOptions: {
+      urlPath: "/assets/img/",
+      outputDir: "./dist/assets/img"
+    }
+  }));
 
   return {
     dir: {
