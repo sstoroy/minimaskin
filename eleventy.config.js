@@ -27,7 +27,7 @@ module.exports = (config) => {
   })
   .use(markdownItEleventyImg, {
     imgOptions: {
-      urlPath: "/assets/img/",
+      urlPath: "minimaskin/assets/img/",
       outputDir: "./dist/assets/img"
     }
   }));
