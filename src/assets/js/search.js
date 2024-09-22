@@ -30,7 +30,7 @@ class SearchPosts {
     wrapperEl.innerHTML = '';
 
     if (query === '') {
-      infoEl.textContent = 'Enter keywords in the search box above';
+      infoEl.textContent = 'Skriv inn søkeord eller emneknagg i boksen.';
 
       return;
     }
@@ -42,7 +42,7 @@ class SearchPosts {
     });
 
     if (matchedPosts.length === 0) {
-      infoEl.textContent = `No results were found for "${query}"`;
+      infoEl.textContent = `Fann ingen forekomster av "${query}"`;
 
       return;
     }
@@ -55,7 +55,7 @@ class SearchPosts {
     const showingRange = this.start < lastPostIndex || this.start !== 1 ? `${this.start} to ${lastPostIndex}` : this.start;
     const extraS = matchedPosts.length > 1 ? 's' : '';
 
-    infoEl.textContent = `Showing ${showingRange} of ${matchedPosts.length} result${extraS} found for "${query}"`;
+    infoEl.textContent = `Syner ${showingRange} / ${matchedPosts.length} resultat${extraS} for "${query}"`;
 
     slicedPosts.forEach((post) => {
       const { url, title, date } = post;
@@ -65,7 +65,7 @@ class SearchPosts {
           <a href="${url}">
             <div class="rounded shadow-md h-full px-6 py-5">
               <div class="font-semibold text-lg mb-2">${title}</div>
-              <p class="text-gray-700 mb-1" title="Published date">${date}</p>
+              <p class="text-gray-700 mb-1" title="Publisheringsdato">${date}</p>
             </div>
           </a>
         </div>

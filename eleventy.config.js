@@ -14,9 +14,13 @@ module.exports = (config) => {
   config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
 
   // random
-  config.addFilter("getRandom", function(items) {
-    let selected = items[Math.floor(Math.random() * items.length)];
-    return selected;
+  config.addFilter("randomOrder", function(items) {
+    let shuffledArray = items.slice(); 
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
   });
 
   // config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));

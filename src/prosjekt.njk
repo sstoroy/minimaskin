@@ -4,11 +4,11 @@ pagination:
     data: collections.pagedPosts
     size: 1
     alias: paged
-permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}prosjekt.html"
+permalink: "/prosjekt/{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
 ---
 
 <div class="flex flex-wrap -mx-2">
-    {% include "partials/post-grid.njk" %}
+    {% include "partials/projects-grid-reverse.njk" %}
 </div>
 
 {% if collections.posts.length > site.paginate %}

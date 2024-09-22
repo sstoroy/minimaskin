@@ -1,7 +1,7 @@
 ---
-title: "How I Learned to Stop Procrastinating"
+title: "pro4"
 description: "The end of procrastination is the art of letting go"
-date: 2020-02-23T02:33
+date: 2023-01-04T02:33
 tags:
     - tips
     - motive

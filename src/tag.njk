@@ -15,7 +15,7 @@ eleventyComputed:
     <h1 class="text-4xl font-medium leading-normal mt-0">{{ paged.tagName | capitalize }}</h1>
 </div>
 <div class="flex flex-wrap -mx-2">
-    {% include "partials/post-grid.njk" %}
+    {% include "partials/projects-grid-reverse.njk" %}
 </div>
 
 {% if collections.tagList[paged.tagName] > site.paginate %}

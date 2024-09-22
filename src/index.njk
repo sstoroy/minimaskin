@@ -1,11 +1,11 @@
 ---
 layout: default
 pagination:
-    data: collections.pagedPosts | getRandom
-    size: 2
+    data: collections.pagedPosts
+    size: 1
     alias: paged
 ---
 
 <div class="flex flex-wrap -mx-2">
-    {% include "partials/post-grid.njk" %}
+    {% include "partials/projects-grid-random.njk" %}
 </div>
