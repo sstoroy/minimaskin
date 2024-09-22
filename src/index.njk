@@ -1,16 +1,11 @@
 ---
 layout: default
 pagination:
-    data: collections.pagedPosts
-    size: 1
+    data: collections.pagedPosts | getRandom
+    size: 2
     alias: paged
-permalink: "{% if paged.number > 1 %}page/{{ paged.number }}/{% endif %}index.html"
 ---
 
 <div class="flex flex-wrap -mx-2">
     {% include "partials/post-grid.njk" %}
 </div>
-
-{% if collections.posts.length > site.paginate %}
-{% include "partials/paginator.njk" %}
-{% endif %}

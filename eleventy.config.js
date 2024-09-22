@@ -13,6 +13,12 @@ module.exports = (config) => {
   config.addFilter('readableDate', require('./lib/filters/readableDate'));
   config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
 
+  // random
+  config.addFilter("getRandom", function(items) {
+    let selected = items[Math.floor(Math.random() * items.length)];
+    return selected;
+  });
+
   // config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));
 
   config.addCollection('posts', require('./lib/collections/posts'));
