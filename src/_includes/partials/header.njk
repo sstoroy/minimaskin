@@ -10,10 +10,6 @@
             <a href="{{ item.url | url }}" {% if item.newTab %}target="_blank" rel="noopener" {% endif %}class="block mt-4 md:inline-block md:mt-0 font-medium text-slate-700 hover:text-teal-600 text-base mr-4">{{ item.label }}</a>
             {% endfor %}
         </nav>
-        <form id="search" action="{{ '/search' | url }}" class="order-last sm:order-none flex-grow items-center justify-end hidden sm:block mt-6 sm:mt-0">
-            <label class="visually-hidden" for="header-searchbox">Søk</label>
-            <input type="text" id="header-searchbox" name="q" placeholder="Søk" class="w-full sm:max-w-xs bg-slate-200 border border-transparent float-right focus:bg-white focus:border-slate-300 focus:outline-none h-8 p-4 placeholder-slate-500 rounded text-slate-700 text-sm">
-        </form>
         <div id="menu-toggle" class="flex items-center md:hidden text-slate-700 hover:text-teal-600 cursor-pointer sm:ml-6">
             {% include "icons/menu.svg" %}
         </div>

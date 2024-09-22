@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daflh/vredeburg.git"
+    "url": "git+https://github.com/sstoroy/minimaskin.git"
   },
   "author": "Steffen Storøy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daflh/vredeburg/issues"
+    "url": "https://github.com/sstoroy/minimaskin/issues"
   },
-  "homepage": "https://github.com/daflh/vredeburg#readme",
+  "homepage": "https://github.com/sstoroy/minimaskin#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@tailwindcss/typography": "^0.5.9",

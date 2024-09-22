@@ -10,5 +10,9 @@
     {
         "label": "Prosjekt",
         "url": "/prosjekt"
+    },
+    {
+        "label": "Stikkord",
+        "url": "/tags"
     }
 ]
