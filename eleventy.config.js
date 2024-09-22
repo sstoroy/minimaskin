@@ -1,6 +1,3 @@
-const markdownIt = require('markdown-it');
-const markdownItEleventyImg = require("markdown-it-eleventy-img");
-
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
