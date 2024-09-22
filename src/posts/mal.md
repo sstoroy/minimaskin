@@ -61,5 +61,5 @@ Numerert liste:
 3. elem3
 
 
-Døme på bilete: <img src="/assets/img/much-to-do.jpg" alt="vanlig bilete">
-Døme på bilete (storleiksendra): <img src="/assets/img/small-business.jpg" alt="lite bilete" width="200"/>
+Døme på bilete: <img src="/minimaskin/assets/img/much-to-do.jpg" alt="vanlig bilete">
+Døme på bilete (storleiksendra): <img src="/minimaskin/assets/img/small-business.jpg" alt="lite bilete" width="200"/>
