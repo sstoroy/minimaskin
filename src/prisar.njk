@@ -9,12 +9,13 @@ title: Prisar
         <tr>
             <td>Arbeid</td>
             <td>Timespris (NOK)</td>
+            <td>Omtale</td>
         </tr>
     </thead>
     <tbody>
-        {%- for key, value in prisar %}
+        {%- for key, elem in prisar %}
         <tr>
-            <td>{{ key }}</td> <td>{{ value }}</td>
+            <td>{% if collections.tagList[key | lower ] > 0 %}<a href="../tags/{{ key }}"> {% endif %}{{ key }}</a> </td> <td>{{ elem.price }}</td> <td>{{ elem.description }} </td>
         </tr>
         {%- endfor %}
     </tbody>

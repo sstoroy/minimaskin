@@ -1,6 +1,18 @@
 {
-    "graving": "100 NOK",
-    "frakting": "1000 SEK",
-    "leksehjelp": "500 USD",
-    "HTML": "Ta kontakt for eit godt tilbod!"
+    "Graving": {
+        "price":"100 NOK",
+        "description":"grev ei grøft"
+    },
+    "Frakting": {
+        "price": "1000 SEK",
+        "description": "frakter frå a til b"
+    },
+    "Leksehjelp": {
+        "price": "500 USD",
+        "description": "inkluderer manerer"
+    },
+    "HTML": {
+        "price": "Ta kontakt for eit godt tilbod!",
+        "description": "inkludered CSS, JS og "
+    }
 }
