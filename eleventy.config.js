@@ -17,6 +17,8 @@ module.exports = (config) => {
   config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
   config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
 
+  config.addPlugin(require('./lib/plugins/imageHandling.js'))
+
   return {
     dir: {
       input: 'src',

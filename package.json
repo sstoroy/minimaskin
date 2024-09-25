@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "markdown-it-eleventy-img": "^0.10.2",
-    "minimaskin": "file:"
+    "minimaskin": "file:",
+    "photoswipe": "^5.4.4"
   }
 }

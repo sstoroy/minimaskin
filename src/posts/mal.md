@@ -60,6 +60,6 @@ Numerert liste:
 2. elem2
 3. elem3
 
-
-Døme på bilete: <img src="/minimaskin/assets/img/much-to-do.jpg" alt="vanlig bilete">
-Døme på bilete (storleiksendra): <img src="/minimaskin/assets/img/small-business.jpg" alt="lite bilete" width="200"/>
+Døme bilete {% image "much-to-do.jpg" %}
+Døme bilete med forklarande tekst {% image "much-to-do.jpg", "Forklarande tekst" %}
+Døme bilete med forklarande tekst og valfri storleik på thumbnail {% image "much-to-do.jpg", "Forklarande tekst 2", 600 %}
