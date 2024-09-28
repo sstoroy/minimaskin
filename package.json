@@ -35,8 +35,6 @@
     "terser": "^5.16.1"
   },
   "dependencies": {
-    "markdown-it-eleventy-img": "^0.10.2",
-    "minimaskin": "file:",
-    "photoswipe": "^5.4.4"
+    "minimaskin": "file:"
   }
 }

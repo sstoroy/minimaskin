@@ -61,5 +61,5 @@ Numerert liste:
 3. elem3
 
 Døme bilete {% image "much-to-do.jpg" %}
-Døme bilete med forklarande tekst {% image "much-to-do.jpg", "Forklarande tekst" %}
+Døme bilete med forklarande tekst {% image "much-to-do.jpg", "Kort forklarande tekst" %}
 Døme bilete med forklarande tekst og valfri storleik på thumbnail {% image "much-to-do.jpg", "Forklarande tekst 2", 600 %}
